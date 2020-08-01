@@ -1,0 +1,19 @@
+﻿@charset "utf-8";
+
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: 0;
+}
+img {
+  vertical-align: top;
+}
