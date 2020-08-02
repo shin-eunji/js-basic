@@ -35,38 +35,6 @@ $(document).ready(function () {
     },
   });
 
-  //open1
-  $btn1.on("click", function () {
-    $top.animate({ width: "100%" }, speed, ease, function () {
-      $right.animate({ height: "100%" }, speed, ease, function () {
-        $bottom.animate({ width: "100%" }, speed, ease, function () {
-          $left.animate({ height: "100%" }, speed, ease, function () {
-            $con.fadeIn(speed);
-          });
-        });
-      });
-    });
-  });
-
-  $btn2.on("click", function () {
-    $wrap2.animate({ height: 400, marginTop: -200 }, speed);
-  });
-
-  //colose2
-  $close2.on("click", function () {
-    $wrap2.animate({ height: 0, marginTop: 0 }, speed);
-  });
-
-  //close1
-  $close1.on("click", function () {
-    $con.fadeOut(speed, function () {
-      $top.animate({ width: "0%" }, speed);
-      $bottom.animate({ width: "0%" }, speed);
-      $left.animate({ height: "0%" }, speed);
-      $right.animate({ height: "0%" }, speed);
-    });
-  });
-});
 
 /*
 	선택자 : 자바스크립트로 제어할(선택한) 대상요소
