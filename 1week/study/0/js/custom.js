@@ -35,6 +35,18 @@ $(document).ready(function () {
     },
   });
 
+  //open1
+  $btn1.on("click", function () {
+    $top.animate({ width: "100%" }, speed, ease, function () {
+      $right.animate({ height: "100%" }, speed, ease, function () {
+        $bottom.animate({ width: "100%" }, speed, ease, function () {
+          $left.animate({ height: "100%" }, speed, ease, function () {
+            $con.fadeIn(speed);
+          });
+        });
+      });
+    });
+  });
 
 /*
 	선택자 : 자바스크립트로 제어할(선택한) 대상요소
