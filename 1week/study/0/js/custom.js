@@ -57,6 +57,17 @@ $(document).ready(function () {
     $wrap2.animate({ height: 0, marginTop: 0 }, speed);
   });
 
+  //close1
+  $close1.on("click", function () {
+    $con.fadeOut(speed, function () {
+      $top.animate({ width: "0%" }, speed);
+      $bottom.animate({ width: "0%" }, speed);
+      $left.animate({ height: "0%" }, speed);
+      $right.animate({ height: "0%" }, speed);
+    });
+  });
+});
+
 /*
 	선택자 : 자바스크립트로 제어할(선택한) 대상요소
 
