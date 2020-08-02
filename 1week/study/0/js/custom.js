@@ -48,6 +48,15 @@ $(document).ready(function () {
     });
   });
 
+  $btn2.on("click", function () {
+    $wrap2.animate({ height: 400, marginTop: -200 }, speed);
+  });
+
+  //close2
+  $close2.on("click", function () {
+    $wrap2.animate({ height: 0, marginTop: 0 }, speed);
+  });
+
 /*
 	선택자 : 자바스크립트로 제어할(선택한) 대상요소
 
